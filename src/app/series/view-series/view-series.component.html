@@ -1,3 +1,6 @@
+
+<div class="container">
+
 <div class="card-deck">
 
   <div class="card" *ngFor="let s of seriesSet">
@@ -8,7 +11,7 @@
       <h4 class="card-title text-center"><span class="badge badge-warning">{{s.rating}}/10</span></h4>
       <div class="card-text">
           <blockquote class="blockquote text-right">
-              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <p class="mb-0">{{s.favouriteDialogue}}</p>
               <footer class="blockquote-footer">- <cite title="{{s.favouriteCharacter}}">{{s.favouriteCharacter}}</cite></footer>
             </blockquote>
       </div>
@@ -17,5 +20,7 @@
       Last Viewed: <time>{{s.recentlywatched}}</time>
     </div>
   </div>
+
+</div>
 
 </div>
