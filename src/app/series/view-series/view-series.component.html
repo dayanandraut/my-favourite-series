@@ -1,6 +1,21 @@
-<p>
-  view-series works!
-</p>
-<div>
-  {{seriesSet|json}}
+<div class="card-deck">
+
+  <div class="card" *ngFor="let s of seriesSet">
+    <div class="card-header">
+      {{s.title}}
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-center"><span class="badge badge-warning">{{s.rating}}/10</span></h4>
+      <div class="card-text">
+          <blockquote class="blockquote text-right">
+              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">- <cite title="{{s.favouriteCharacter}}">{{s.favouriteCharacter}}</cite></footer>
+            </blockquote>
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+      Last Viewed: <time>{{s.recentlywatched}}</time>
+    </div>
+  </div>
+
 </div>
