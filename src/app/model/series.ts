@@ -3,5 +3,6 @@ export class Series{
     title:string;
     favouriteCharacter:string;
     recentlywatched:string;
-    rating:number    
+    rating:number;
+    favouriteDialogue:string;   
 }
