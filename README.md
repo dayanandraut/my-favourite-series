@@ -1,4 +1,5 @@
-# MyFavouriteSeries
+# My Favourite Series
+This angular app is created to demonstrate CRUD operation using in-memory API (to simulate REST api)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
