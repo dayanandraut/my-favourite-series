@@ -14,6 +14,6 @@ export class DataService implements InMemoryDbService {
       {id:2, title:"Prison Break", favouriteCharacter:"Michael", recentlywatched:"2019-05-27", rating:"9.0"},
       {id:3, title:"Breaking Bad", favouriteCharacter:"Jessie", recentlywatched:"2018-08-21", rating:"9.5"}
     ];
-    return data;
+    return {data};
   }
 }
