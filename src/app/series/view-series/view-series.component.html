@@ -4,7 +4,7 @@
 <div class="card-deck">
 
   <div class="card" *ngFor="let s of seriesSet">
-    <div class="card-header">
+    <div class="card-header" style="background-color: rgba(41, 10, 82, 0.71); color:white;">
       {{s.title}}
     </div>
     <div class="card-body">
@@ -12,7 +12,7 @@
       <div class="card-text">
           <blockquote class="blockquote text-right">
               <p class="mb-0">{{s.favouriteDialogue}}</p>
-              <footer class="blockquote-footer">- <cite title="{{s.favouriteCharacter}}">{{s.favouriteCharacter}}</cite></footer>
+              <footer class="blockquote-footer"><cite title="{{s.favouriteCharacter}}">{{s.favouriteCharacter}}</cite></footer>
             </blockquote>
       </div>
     </div>
