@@ -1,0 +1,16 @@
+Installing Bootstrap from NPM:
+    npm install bootstrap@3.3.7     //for particular version
+    npm install bootstrap           //for latest version
+
+Importing the CSS:
+    -Configure angular.json:
+        "styles":   [
+                    "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                    "styles.scss"
+                    ]
+                    (OR)
+    -Import directly in src/style.css or src/style.scss
+        @import '~bootstrap/dist/css/bootstrap.min.css';
+
+Installing angular-in-memory-web-api module:
+    npm install --save angular-in-memory-web-api
