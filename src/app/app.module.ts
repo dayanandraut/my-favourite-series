@@ -16,6 +16,7 @@ import { AddSeriesComponent } from './series/add-series/add-series.component';
 import { DeleteSeriesComponent } from './series/delete-series/delete-series.component';
 import { UpdateSeriesComponent } from './series/update-series/update-series.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AddSeriesComponent,
     DeleteSeriesComponent,
     UpdateSeriesComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
