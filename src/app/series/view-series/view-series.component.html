@@ -3,7 +3,7 @@
 
 <div class="card-deck">
 
-  <div class="card" *ngFor="let s of seriesSet">
+  <div class="card" *ngFor="let s of seriesSet;index as i" style="min-width: 20rem; margin-top:10px;">
     <div class="card-header" style="background-color: rgba(41, 10, 82, 0.71); color:white;">
       {{s.title}}
     </div>
