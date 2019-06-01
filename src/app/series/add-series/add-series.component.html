@@ -1,3 +1,35 @@
-<p>
-  add-series works!
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Add New Series</h2>
+            <form [formGroup]="dataForm">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" formControlName="title" class="form-control"/> 
+                <!-- <div *ngIf="dataForm.controls.title.errors">Title is required</div>                -->
+              </div>
+              <div class="form-group">
+                  <label for="favouriteCharacter">Favourite Character</label>
+                  <input type="text" id="favouriteCharacter" formControlName="favouriteCharacter" class="form-control"/>                
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating out of 10</label>
+                    <input type="text" id="rating" formControlName="rating" class="form-control"/>                
+                  </div>
+                  <div class="form-group">
+                      <label for="recentlywatched">Last Watched on</label>
+                      <input type="date" id="recentlywatched" formControlName="recentlywatched" class="form-control"/>                
+                    </div>
+                    <div class="form-group">
+                        <label for="favouriteDialogue">Favourite Dialogue</label>
+                        <textarea id="favouriteDialogue" formControlName="favouriteDialogue" class="form-control"></textarea>                
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="button"[disabled] = "!dataForm.valid" class=" btn btn-primary" id="save" value="Save" (click)="save()" />  &nbsp;             
+                        <input type="reset" class=" btn btn-default" id="reset" value="Reset" />               
+                    </div>
+                    
+            </form>
+        </div>
+    </div>
+</div>

@@ -13,5 +13,9 @@ export class SeriesService {
     return this.httpClient.get<Series[]>(this.serverURL+"data");
   }
 
+  public createSeries(series:Series){
+    return this.httpClient.post(`${this.serverURL + 'data'}`, series);
+  }
+
   
 }
