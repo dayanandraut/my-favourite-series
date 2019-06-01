@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
 import { Series } from 'src/app/model/series';
 import { SeriesService } from 'src/app/series.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-add-series',
   templateUrl: './add-series.component.html',
@@ -9,7 +10,7 @@ import { SeriesService } from 'src/app/series.service';
 })
 export class AddSeriesComponent implements OnInit {
   dataForm:FormGroup;
-  constructor(private fb:FormBuilder, private seriesService:SeriesService) { }
+  constructor(private fb:FormBuilder, private seriesService:SeriesService, private router:Router) { }
 
   ngOnInit() {
     // Creating form
@@ -35,11 +36,17 @@ export class AddSeriesComponent implements OnInit {
     series.recentlywatched = this.dataForm.get("recentlywatched").value;
     series.rating = this.dataForm.get("rating").value;
     series.favouriteDialogue = this.dataForm.get("favouriteDialogue").value;
-    console.log(series);
+    //console.log(series);
 
     this.seriesService.createSeries(series).subscribe(
-      d => console.log("Received:"+JSON.stringify(d)),
-      e => console.log("Error:"+JSON.stringify(e))
+      d => {
+        console.log("Received:"+JSON.stringify(d))
+        this.router.navigate(['/series']);
+      },
+      e => {
+        console.log("Error:"+JSON.stringify(e));
+        alert("Error: Couldn't be added!");
+      }
     );
   }
   

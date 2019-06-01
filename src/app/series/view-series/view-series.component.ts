@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {SeriesService} from '../../series.service';
 import { Series } from '../../model/series';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-view-series',
   templateUrl: './view-series.component.html',
@@ -8,7 +9,7 @@ import { Series } from '../../model/series';
 })
 export class ViewSeriesComponent implements OnInit {
   seriesSet: Series[] = [];
-  constructor(private seriesService:SeriesService) { }
+  constructor(private seriesService:SeriesService, private router:Router) { }
 
   ngOnInit() {
     this.populateSeries();
@@ -22,6 +23,10 @@ export class ViewSeriesComponent implements OnInit {
       },
       err => console.log("Error occured: "+err.message)
     );
+  }
+
+  navigateToNew(){
+    this.router.navigate(['/series/add']);
   }
 
 }
