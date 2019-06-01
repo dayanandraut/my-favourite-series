@@ -13,12 +13,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewSeriesComponent } from './series/view-series/view-series.component';
 import { AddSeriesComponent } from './series/add-series/add-series.component';
+import { DeleteSeriesComponent } from './series/delete-series/delete-series.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ViewSeriesComponent,
-    AddSeriesComponent
+    AddSeriesComponent,
+    DeleteSeriesComponent
   ],
   imports: [
     BrowserModule,
