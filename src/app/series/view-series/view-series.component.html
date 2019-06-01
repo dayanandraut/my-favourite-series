@@ -8,7 +8,7 @@
       {{s.title}}
     </div>
     <div class="card-body">
-      <h4 class="card-title text-center"><span class="badge badge-warning">{{s.rating}}/10</span></h4>
+      <h4 class="card-title text-center"><span class="badge badge-warning"><i class="fa fa-star"></i>{{s.rating}}/10</span></h4>
       <div class="card-text">
           <blockquote class="blockquote text-right">
               <p class="mb-0">{{s.favouriteDialogue}}</p>
@@ -18,6 +18,10 @@
     </div>
     <div class="card-footer text-muted">
       Last Viewed: <time>{{s.recentlywatched}}</time>
+      <span class="text-right" style="position: absolute; right: 5px;">
+          <button type="button" class="btn btn-secondary btn-sm"><i class="fa fa-pencil"></i></button> &nbsp;
+          <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+      </span>
     </div>
   </div>
 

@@ -11,11 +11,13 @@ import {AngularFontAwesomeModule} from "angular-font-awesome";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewSeriesComponent } from './series/view-series/view-series.component';
+import { AddSeriesComponent } from './series/add-series/add-series.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ViewSeriesComponent
+    ViewSeriesComponent,
+    AddSeriesComponent
   ],
   imports: [
     BrowserModule,
