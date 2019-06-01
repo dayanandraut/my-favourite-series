@@ -19,7 +19,7 @@
     <div class="card-footer text-muted">
       Last Viewed: <time>{{s.recentlywatched}}</time>
       <span class="text-right" style="position: absolute; right: 5px;">
-          <button type="button" class="btn btn-secondary btn-sm"><i class="fa fa-pencil"></i></button> &nbsp;
+          <button type="button" class="btn btn-secondary btn-sm" (click)="navigateToUpdate(s.id)"><i class="fa fa-pencil"></i></button> &nbsp;
           <button type="button" class="btn btn-danger btn-sm" (click)="deleteSeries(s.id)"><i class="fa fa-trash"></i></button>
       </span>
     </div>

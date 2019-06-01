@@ -25,8 +25,14 @@ export class ViewSeriesComponent implements OnInit {
     );
   }
 
+  // create new
   navigateToNew(){
     this.router.navigate(['/series/add']);
+  }
+
+  // edit series
+  navigateToUpdate(id:number){
+    this.router.navigate(['/series/update',id]);
   }
 
   // deleting series

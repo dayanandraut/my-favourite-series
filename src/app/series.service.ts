@@ -29,5 +29,10 @@ export class SeriesService {
     return this.httpClient.get<Series>(`${this.serverURL + 'data'}/${id}`);
   }
 
+  // api to update Series by id
+  public updateSeries(series:Series){
+    return this.httpClient.put(`${this.serverURL + 'data'}/${series.id}`, series)
+  }
+
   
 }
