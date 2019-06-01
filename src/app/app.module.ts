@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 // for in memory db
 import { InMemoryWebApiModule } from "angular-in-memory-web-api";  
@@ -22,6 +23,7 @@ import { AddSeriesComponent } from './series/add-series/add-series.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule, // for reactive forms
     AngularFontAwesomeModule, //angular font awesome
     HttpClientModule, // for httpClient Services
     InMemoryWebApiModule.forRoot(DataService) // for in memory db
