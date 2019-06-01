@@ -24,5 +24,10 @@ export class SeriesService {
     return  this.httpClient.delete(`${this.serverURL + 'data'}/${id}`)
   }
 
+  // api to get Series by its id
+  public getSeriesById(id:number){
+    return this.httpClient.get<Series>(`${this.serverURL + 'data'}/${id}`);
+  }
+
   
 }

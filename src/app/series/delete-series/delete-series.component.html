@@ -1,3 +1,9 @@
-<p>
-  delete-series works!
-</p>
+<div>
+  {{series|json}}
+</div>
+
+<div *ngIf="deleted">
+  <p>Successfully deleted</p>
+</div>
+
+<a [routerLink] = '["/series"]' routerLinkActive="active" class="btn btn-lg btn-info"><i class="fa fa-home"></i></a>

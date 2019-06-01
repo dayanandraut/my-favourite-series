@@ -31,17 +31,8 @@ export class ViewSeriesComponent implements OnInit {
 
   // deleting series
   deleteSeries(id:number){
-    // this.seriesService.deleteSeries(id).subscribe(
-    //   d=> console.log("Deleted successfully: "+JSON.stringify(d)),
-    //   e => {
-    //     console.log("Error occured:"+JSON.stringify(e));
-    //     alert("Error:Cannot delete!");
-    //   }
-    // );
-    // let s = this.seriesSet.findIndex(e=> e.id==id);
-    // if(s){
-    //   if(this.seriesSet.splice(s,1)) console.log("Deleted successfully");
-    // }
+
+    this.router.navigate(['/series/delete',id]);
   }
 
 }
