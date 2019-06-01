@@ -1,0 +1,13 @@
+.myfooter{
+    background-color:gray; 
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    
+}
+
+.social-link{
+    text-decoration: none;
+}
