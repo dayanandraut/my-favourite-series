@@ -14,3 +14,12 @@ Importing the CSS:
 
 Installing angular-in-memory-web-api module:
     npm install --save angular-in-memory-web-api
+
+Installing font awesome 
+    npm install --save font-awesome angular-font-awesome
+    -import { AngularFontAwesomeModule } from 'angular-font-awesome';
+    -configure angular.json
+        "styles": [
+            "styles.css",
+            "../node_modules/font-awesome/css/font-awesome.css"
+        ],
