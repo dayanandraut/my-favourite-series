@@ -1,9 +1,23 @@
-<div>
-  {{series|json}}
-</div>
 
-<div *ngIf="deleted">
-  <p>Successfully deleted</p>
-</div>
+ <div class="container text-center">
+    <div class="card text-center" *ngIf="series" style="width: 25rem; margin-top:10px;">
+        <div class="card-header " style="background-color: rgba(41, 10, 82, 0.71); color:white;">
+          To be Deleted
+        </div>
+        <div class="card-body">
+          <h4 class="card-title text-center">
+              {{series.title|uppercase}}
+          </h4>
+          <div class="card-text text-center">
+            <h3>
+              <span class="badge badge-warning"><i class="fa fa-star"></i>{{series.rating}}/10</span>
+            </h3>
+         <p *ngIf="deleted">Deleted Successfully &nbsp;<span style="color:green"><i class="fa fa-check"></i></span></p>
 
-<a [routerLink] = '["/series"]' routerLinkActive="active" class="btn btn-lg btn-info"><i class="fa fa-home"></i></a>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <a [routerLink] = '["/series"]' routerLinkActive="active" class="btn btn-lg btn-info"><i class="fa fa-home"></i></a>
+        </div>
+      </div>
+</div> 
