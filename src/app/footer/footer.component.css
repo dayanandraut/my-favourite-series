@@ -1,10 +1,10 @@
 .myfooter{
     background-color:#57585a40; 
-    position:absolute;
-    bottom:0;
+    position:relative;
+    bottom:0px;
     width:100%;
-    padding:10px;
-    margin-top:10px;
+    padding:10px ;
+    margin-top:20px;
     
 }
 
