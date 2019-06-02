@@ -1,5 +1,5 @@
 .myfooter{
-    background-color:gray; 
+    background-color:#57585a40; 
     position:absolute;
     bottom:0;
     width:100%;
@@ -10,4 +10,9 @@
 
 .social-link{
     text-decoration: none;
+    color:gray;
+}
+
+.social-link:hover{
+    color: black;
 }
