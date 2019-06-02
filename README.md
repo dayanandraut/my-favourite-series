@@ -13,7 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Important Instructions 
 
-Important commands and instructions have been mentioned in the file [important commands file]("/important commands.txt") for installing various modules, configuring them, putting project on github and for deploying the project on github
+Important commands and instructions have been mentioned in the file `important commands.txt` for installing various modules, configuring them, putting project on github and for deploying the project on github
 
 ## Development server
 
