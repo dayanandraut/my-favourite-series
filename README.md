@@ -1,5 +1,13 @@
 # My Favourite Series
 This angular app is created to demonstrate CRUD operation using in-memory API (to simulate REST api)
+## Major concepts used in this project are:
+  1. Setting up angular project
+  2. Installing and configuring in-memory-angular-web-api
+  3. Installing and configuring bootstrap and font-awesome
+  4. Components and services
+  5. Directives
+  5. Forms and Data Binding
+  6. Routing
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
@@ -22,6 +30,14 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Project Status
+
+The project's main aim has been completed. However, few enhancements are yet to be done. Future enhancements include:
+  1. Validation and error message in the form
+  2. Design of footer - aligning it to the buttom of page
+  3. Aliging the content of delete component to the center of page
+  4. Adding search functionality
 
 ## Further help
 
