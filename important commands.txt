@@ -1,3 +1,20 @@
+-------------------BASIC COMMANDS-----------------------------------------
+To create new Project: ng new projectName
+To generate component : ng g c componentName
+To generate service : ng g s serviceName
+To generate class : ng generate class className
+To run the project: ng serve --open
+--------------------LINKING PROJECT TO GITHUB------------------------------
+1. Create github repo
+2. Open cmd in the project folder
+3. Run the following commands:
+    >rd .git /S/Q
+    >git init 
+    >git add .
+    >git commit -m "message"
+    >git remote add origin <repo_url>.git
+    >git push -u origin master
+---------------------------------------------------------------------------
 Installing Bootstrap from NPM:
     npm install bootstrap@3.3.7     //for particular version
     npm install bootstrap           //for latest version
@@ -23,3 +40,6 @@ Installing font awesome
             "styles.css",
             "../node_modules/font-awesome/css/font-awesome.css"
         ],
+
+
+
