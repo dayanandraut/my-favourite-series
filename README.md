@@ -11,6 +11,10 @@ This angular app is created to demonstrate CRUD operation using in-memory API (t
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
+## Important Instructions 
+
+Important commands and instructions have been mentioned in the file "important instructions.txt" for installing various modules, configuring them, putting project on github and for deploying the project on github
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
