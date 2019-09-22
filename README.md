@@ -1,5 +1,5 @@
 # My Favourite Series
-This angular app is created to demonstrate CRUD operation using in-memory API (to simulate REST api)
+This angular app is created to demonstrate CRUD operation using in-memory API (to simulate REST api). It has been hosted online at https://dayanandraut.github.io/my-favourite-series/series
 ## Major concepts used in this project are:
   1. Setting up angular project
   2. Installing and configuring in-memory-angular-web-api
